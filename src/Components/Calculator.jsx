@@ -9,6 +9,9 @@ export const Calculator = () => {
   
   // function for changing and saving the display element by concatinating its previous val with entered input
   const saveUserInput = (input) => {
+    if(displayElement === "Error"){
+      return;
+    }
     changeDisplayElement(displayElement.concat(input));
     
   }
