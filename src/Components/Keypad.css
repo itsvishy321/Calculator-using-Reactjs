@@ -1,0 +1,30 @@
+.grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,4rem);
+    grid-template-rows: repeat(4,4rem);
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.keys {
+    list-style: none;
+    margin: 1.5rem 0;
+}
+
+.keys button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-size: 1.4rem;
+    border-radius: 8px;
+    padding: 1.2rem 1.8rem;
+    transition: all 0.1s ease;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+}
+
+.keys button:hover{
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.414);
+}
